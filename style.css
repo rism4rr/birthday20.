@@ -1,0 +1,224 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f5eee2;
+    color: #70212e;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero {
+    min-height: 100vh;
+    padding: 25px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    background:
+        radial-gradient(ellipse at top, #fffaf0, transparent 70%),
+        #f5eee2;
+    border: 12px double #70212e;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    flex-wrap: wrap;
+    padding: 15px 0;
+}
+
+.navbar a {
+    color: #70212e;
+    text-decoration: none;
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+
+.invitation {
+    max-width: 700px;
+    margin: 70px auto 40px;
+}
+
+.eyebrow {
+    font-size: 11px;
+    letter-spacing: 4px;
+    margin-bottom: 25px;
+}
+
+.ornament,
+.bottom-ornament {
+    font-size: 40px;
+    margin: 15px;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+}
+
+h1 {
+    font-size: clamp(40px, 8vw, 75px);
+    font-style: italic;
+}
+
+.invitation h2 {
+    font-size: clamp(65px, 15vw, 125px);
+    letter-spacing: 5px;
+    line-height: 1.1;
+}
+
+.subtitle {
+    letter-spacing: 5px;
+    font-size: 12px;
+    margin-top: 15px;
+}
+
+.divider {
+    margin: 30px 0;
+    font-size: 14px;
+}
+
+.message {
+    font-family: 'Playfair Display', serif;
+    font-size: 19px;
+    line-height: 1.9;
+}
+
+.dresscode {
+    margin-top: 35px;
+    font-size: 11px;
+    letter-spacing: 3px;
+}
+
+.date {
+    margin: 15px 0 25px;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.button {
+    display: inline-block;
+    background: #70212e;
+    color: #fff8ed;
+    border: 1px solid #70212e;
+    padding: 14px 25px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: #4d1420;
+}
+
+.details,
+.rsvp {
+    padding: 80px 20px;
+    text-align: center;
+    max-width: 850px;
+    margin: auto;
+}
+
+.details h2,
+.rsvp h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.details > p:not(.eyebrow),
+.rsvp > p:not(.eyebrow):not(.footer) {
+    max-width: 550px;
+    margin: 0 auto 30px;
+    line-height: 1.9;
+    font-size: 14px;
+}
+
+.detail-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.detail-card > div {
+    border: 1px solid #b68b83;
+    padding: 35px 15px;
+}
+
+.detail-card span {
+    font-size: 10px;
+    letter-spacing: 3px;
+}
+
+.detail-card h3 {
+    margin: 15px 0;
+    font-size: 23px;
+}
+
+.detail-card p {
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+.rsvp form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+    margin: 30px auto;
+}
+
+.rsvp input,
+.rsvp select {
+    padding: 14px;
+    border: 1px solid #b68b83;
+    background: #fffaf0;
+    color: #70212e;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer {
+    margin-top: 60px;
+    font-size: 10px;
+    letter-spacing: 4px;
+}
+
+@media (max-width: 600px) {
+    .hero {
+        padding: 12px;
+        border-width: 7px;
+    }
+
+    .navbar {
+        gap: 15px;
+    }
+
+    .navbar a {
+        font-size: 9px;
+    }
+
+    .invitation {
+        margin-top: 55px;
+    }
+
+    .detail-card {
+        grid-template-columns: 1fr;
+    }
+
+    .details h2,
+    .rsvp h2 {
+        font-size: 34px;
+    }
+}

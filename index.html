@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Risma's Twentieth Birthday</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="hero">
+        <nav class="navbar">
+            <a href="#home">THE INVITATION</a>
+            <a href="#details">THE DETAILS</a>
+            <a href="#rsvp">RSVP</a>
+        </nav>
+
+        <main class="invitation" id="home">
+            <p class="eyebrow">YOU ARE CORDIALLY INVITED TO</p>
+
+            <div class="ornament">❦</div>
+
+            <h1>Risma's</h1>
+            <h2>TWENTY</h2>
+            <p class="subtitle">BIRTHDAY CELEBRATION</p>
+
+            <div class="divider">✦ ───── ❦ ───── ✦</div>
+
+            <p class="message">
+                A little celebration, a lot of love,<br>
+                and beautiful memories to make.
+            </p>
+
+            <p class="dresscode">DRESS CODE: BLACK </p>
+            <p class="date">MONDAY · 19 OCTOBER </p>
+
+            <a class="button" href="#details">DISCOVER THE INVITATION</a>
+        </main>
+
+        <div class="bottom-ornament">❦</div>
+    </header>
+
+    <section class="details" id="details">
+        <p class="eyebrow">LET'S MAKE A MEMORY</p>
+        <h2>A Special Day</h2>
+        <p>
+            Turning twenty deserves a little magic.
+            I'd love to celebrate this special moment
+            with the people who make life beautiful.
+        </p>
+
+        <div class="detail-card">
+            <div>
+                <span>DATE & TIME</span>
+                <h3>Monday, 19 October</h3>
+                <p>Time to be announced</p>
+            </div>
+
+            <div>
+                <span>LOCATION</span>
+                <h3>KOV Heritage</h3>
+                <p>Semarang, Central Java</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="rsvp" id="rsvp">
+        <p class="eyebrow">KINDLY RESPOND</p>
+        <h2>Will You Join Me?</h2>
+        <p>It would mean the world to celebrate with you.</p>
+
+        <form id="rsvpForm">
+            <input type="text" id="guestName"
+                   placeholder="Your name" required>
+
+            <select id="attendance" required>
+                <option value="">Will you attend?</option>
+                <option value="Yes, I'll be there!">Yes, I'll be there!</option>
+                <option value="Sorry, I can't make it">
+                    Sorry, I can't make it
+                </option>
+            </select>
+
+            <button type="submit" class="button">
+                SEND RSVP
+            </button>
+        </form>
+
+        <p class="footer">MADE WITH LOVE ♡</p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
